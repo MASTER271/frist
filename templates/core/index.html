@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>wellcome to our website</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static '/img/favicon.png' %}" rel="icon">
+  <link href="(% static '/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+ 
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light"><a href="index.html"><span>Ecommerce</span></a></h1>
+          
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto active" href="#services">Services</a></li>
+            <li><a class="nav-link scrollto active" href="#products">products</a></li>
+            <li><a class="nav-link scrollto active" href="#about">About us</a></li>
+            <li><a class="getstarted scrollto" href="{% url 'user_login' %}">Login</a></li>
+            <li><a class="getstarted scrollto" href="{% url 'user_register' %}">Register</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+      <h1>Fashionable Clothing.Re-imagined </h1>
+      <h2>Fashionable Clothing. Re-imagined invites you to explore a realm where fashion transcends boundaries.</h2>
+      <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="row" id="services">
+        <h2>Services</h2>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= About Section ======= -->
+    <section class="about">
+      <div class="container">
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <h2>You Can Check Our All Services Here</h2>
+            <h3>Dive into a world where creativity knows no limits, and each garment tells a unique story. </h3>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="20Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave<0">
+            <p>
+              Highlight your quick delivery services to attract customers who prioritize speed.
+              Assure customers that help is available at any time, which can increase their confidence in shopping from your website.
+              Promote hassle-free returns to alleviate any concerns customers may have about making a purchase.
+              Emphasize the security measures in place for payment processing to build trust with potential customers.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i>Fast Shipping</li>
+              <li><i class="ri-check-double-line"></i>24/7 Customer Support</li>
+              <li><i class="ri-check-double-line"></i>Easy Returns</li>
+            </ul>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-left">
+          <h2 id="products">Products</h2>
+          <p>Explore our diverse range of high-quality products curated just for you. From stylish apparel to cutting-edge electronics, we have everything you need to elevate your lifestyle. Whether you're searching for the latest fashion trends, innovative gadgets, or essential home items, our carefully selected collection ensures that you'll find exactly what you're looking for.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">men</li>
+              <li data-filter=".filter-card">Women</li>
+              <li data-filter=".filter-web">shoes</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Men 1</h4>
+                <p>Men</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <h4>Dennis Lingo Men's Regular Fit Long Sleeve Button Down Panel Denim JacketDennis Lingo Men's Regular Fit Long Sleeve Button Down Panel Denim Jacket</h4>
+              <h3>price: Rs1,503 </h3>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-2.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Shoes 3</h4>
+                <p>Shoes</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <h4>Liberty Men 2046-01 Black Formal Derby Shoes-9 UK(43 EU)</h4>
+              <h3>price: Rs1,903 </h3>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-3.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Men 2</h4>
+                <p>Men</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <h4>Dennis Lingo Men's Regular Fit Long Sleeve Button Down Panel Denim JacketDennis Lingo Men's Regular Fit Long Sleeve Button Down Panel Denim Jacket</h4>
+              <h3>price: Rs2,503 </h3>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-4.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Women 2</h4>
+                <p>Women</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <h4>Women's Denim Blend Standard Length Jacket</h4>
+              <h3>price: Rs4,503 </h3>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-5.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Shoes 2</h4>
+                <p>Shoes</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <h4>Liberty Men 2046-01 Black Formal Derby Shoes-9 UK(43 EU)</h4>
+              <h3>price: Rs2,503 </h3>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-6.jpg' %}" class="img-fluid" width="100%" alt="">
+              <div class="portfolio-info">
+                <h4>Men 3</h4>
+                <p>Men</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-6.jpg' %}" data-gallery="portfolioGallery" width="100%" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <h4>Dennis Lingo Men's Regular Fit Long Sleeve Button Down Panel Denim JacketDennis Lingo Men's Regular Fit Long Sleeve Button Down Panel Denim Jacket</h4>
+              <h3>price: Rs5,503 </h3>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-7.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Women 1</h4>
+                <p>Women</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <h4>Women's Denim Blend Standard Length Jacket</h4>
+              <h3>price: Rs5,503 </h3>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-8.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Women 3</h4>
+                <p>Women</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <h4>Women's Denim Blend Standard Length Jacket</h4>
+              <h3>price: Rs3,503 </h3>
+              <button>Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-9.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Shoes 3</h4>
+                <p>Shoes</p>
+                <div class="portfolio-links">
+                  <a href="{% static 'C:\Users\Dell\Desktop\localrepo\All_in_one\youtube project\ecommerce\static\img\portfolio\portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <h4>Liberty Men 2046-01 Black Formal Derby Shoes-9 UK(43 EU)</h4>
+              <h3>price: Rs2,503 </h3>
+              <button>Add To Cart</button>
+          </div>
+         
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+    
+
+   
+
+                
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <h2 id="about">About us</h2>
+              <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+
+              <div class="col-lg-6">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="pic"><img src="{% static 'img/team/team-1.jpg' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Walter White</h4>
+                    <span>Chief Executive Officer</span>
+                    <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="pic"><img src="{% static 'img/team/team-2.jpg' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Sarah Jhonson</h4>
+                    <span>Product Manager</span>
+                    <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="pic"><img src="{% static 'img/team/team-3.jpg' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>William Anderson</h4>
+                    <span>CTO</span>
+                    <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mt-4">
+                <div class="member" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="pic"><img src="{% static 'img/team/team-4.jpg' %}" class="img-fluid" alt=""></div>
+                  <div class="member-info">
+                    <h4>Amanda Jepson</h4>
+                    <span>Accountant</span>
+                    <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                    <div class="social">
+                      <a href=""><i class="ri-twitter-fill"></i></a>
+                      <a href=""><i class="ri-facebook-fill"></i></a>
+                      <a href=""><i class="ri-instagram-fill"></i></a>
+                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="section-title">
+              <h2>Contact</h2>
+              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+            <div class="info mt-4">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 mt-4">
+                <div class="info">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@example.com</p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="info w-100 mt-4">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+1 5589 55488 55s</p>
+                </div>
+              </div>
+            </div>
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Ecommerce</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+    
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
